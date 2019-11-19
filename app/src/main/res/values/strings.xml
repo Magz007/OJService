@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">OJService</string>
+    <string name="mainheadtxt">Odd Jobs and Services </string>
+    <string name="loginbtn">Login</string>
+    <string name="registerbtn">Register</string>
+
+
 </resources>
