@@ -5,65 +5,64 @@
     android:id="@+id/mainbackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9955ACC7"
+    android:background="#D23A29B4"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/loginbtn"
-        android:layout_width="203dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="72dp"
-        android:text="@string/loginbtn"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
 
-        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/loginbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <Button
         android:id="@+id/registerbtn"
-        android:layout_width="193dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="212dp"
+        android:layout_width="139dp"
+        android:layout_height="51dp"
         android:text="@string/registerbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/loginbtn"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="377dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:background="#0A2429"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#FDFFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.944" />
-
-    <TextView
-        android:id="@+id/app_name"
-        android:layout_width="716dp"
-        android:layout_height="95dp"
-        android:layout_gravity="center"
-        android:background="#405EF7"
-        android:text="@string/app_name"
-        android:textColor="#FDFFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/loginbtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.102" />
+        app:layout_constraintVertical_bias="0.849" />
 
     <TextView
         android:id="@+id/mainheadtxt"
-        android:layout_width="466dp"
-        android:layout_height="90dp"
-        android:layout_gravity="center"
-        android:background="#6370C5"
+        android:layout_width="379dp"
+        android:layout_height="69dp"
+        android:background="#0A2429"
+        android:gravity="center"
         android:text="@string/mainheadtxt"
         android:textColor="#F8FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/loginbtn"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/app_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.307" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
