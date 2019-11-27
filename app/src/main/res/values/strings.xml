@@ -1,17 +1,39 @@
 <resources>
     <string name="app_name">OJService</string>
     <string name="mainheadtxt">Odd Jobs and Services </string>
+
+    <string name="emailtxt">Email</string>
+    <string name="passwordtxt">Password</string>
     <string name="loginbtn">Login</string>
     <string name="registerbtn">Register</string>
+    <string name="forgotpassbtn">Forgot your Password?</string>
+
     <string name="detailstxtv">Enter Your Details Below</string>
-    <string name="custRbtn">I need a BabySitter</string>
-    <string name="babysitRbtn">I am a BabySitter</string>
-    <string name="fladdesstxt">Frist line Address </string>
     <string name="fnametxt">First Name </string>
     <string name="snametxt">Surname </string>
+    <string name="fladdesstxt">Frist line Address </string>
     <string name="towntxt"> Town</string>
     <string name="postcodetxt">Postcode </string>
     <string name="phonenumtxt">Phone </string>
+    <string name="dateobtxt">dd/mm/yyyy</string>
+    <string name="nextbtn">NEXT</string>
+
+    <string name="disregsetxt">Almost Done</string>
+    <string name="resEmail">Enter Email</string>
+    <string name="resPassword">Enter Password</string>
+    <string name="resPassword2">Re-Enter Password</string>
+    <string name="uploadbtn">Upload your Photo </string>
+    <string name="fileupload">Your Image </string>
+    <string name="discrpttxt">A few Words to describe yourself</string>
+    <string name="subbtn">SUBMIT</string>
+    <string name="rebottomtxt">easy jobs for easy people</string>
+
+
+    <string name="custRbtn">I need a BabySitter</string>
+    <string name="babysitRbtn">I am a BabySitter</string>
+    <string name="femaleRbtn">Female</string>
+    <string name="maleRbtn">Male</string>
+
 
     <string-array name="intialspin">
         <item> Mr  </item>
@@ -100,10 +122,9 @@
 
     </string-array>
 
-    <string name="femaleRbtn">Female</string>
-    <string name="maleRbtn">Male</string>
-    <string name="nextbtn">NEXT</string>
-    <string name="disregsetxt">Almost Done  ...</string>
+
+
+
 
 
 </resources>

@@ -5,64 +5,123 @@
     android:id="@+id/mainbackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D23A29B4"
+    android:background="@drawable/wallpaper"
     tools:context=".MainActivity">
+
 
     <Button
         android:id="@+id/loginbtn"
-        android:layout_width="144dp"
+        android:layout_width="140dp"
         android:layout_height="50dp"
-
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:background="@drawable/roundedgeedittext"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/loginbtn"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtxt" />
 
     <Button
         android:id="@+id/registerbtn"
-        android:layout_width="139dp"
-        android:layout_height="51dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="25dp"
         android:text="@string/registerbtn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/loginbtn"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
-
-    <TextView
-        android:id="@+id/app_name"
-        android:layout_width="377dp"
-        android:layout_height="94dp"
-        android:layout_gravity="center"
-        android:background="#0A2429"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textColor="#FDFFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/roundedgeedittext"
+        app:layout_constraintBottom_toTopOf="@+id/forgotpassbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
+
+    <TextView
+        android:id="@+id/forgotpassbtn"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        android:background="#0A2429"
+        android:gravity="center"
+        android:text="@string/forgotpassbtn"
+        android:textColor="#FDFFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849" />
+        app:layout_constraintVertical_bias="0.975" />
 
     <TextView
         android:id="@+id/mainheadtxt"
-        android:layout_width="379dp"
-        android:layout_height="69dp"
+        android:layout_width="400dp"
+        android:layout_height="90dp"
         android:background="#0A2429"
         android:gravity="center"
         android:text="@string/mainheadtxt"
         android:textColor="#F8FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/app_name"
+
+        app:layout_constraintBottom_toTopOf="@+id/forgotpassbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307" />
+        app:layout_constraintVertical_bias="0.17" />
+
+    <EditText
+        android:id="@+id/resEmailtxt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="Email"
+        android:background="@drawable/roundedgeedittext"
+        android:ems="10"
+        android:hint="@string/emailtxt"
+        android:inputType="textEmailAddress"
+        android:text="@string/emailtxt"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/passwordtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainheadtxt"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/passwordtxt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="Password"
+        android:background="@drawable/roundedgeedittext"
+        android:ems="10"
+        android:hint="@string/passwordtxt"
+        android:inputType="textPassword"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/loginbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resEmailtxt"
+        tools:targetApi="o" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
