@@ -19,7 +19,7 @@ public class YourAddress extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_your_address);
 
-        mButton= findViewById(R.id.nextYouraddbtn);
+        mButton= findViewById(R.id.submitSchbtn);
         mButton.setOnClickListener(new View.OnClickListener()
         {
             @Override

@@ -5,7 +5,7 @@
     android:id="@+id/mainbackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blueplanet"
+    android:background="@drawable/leaf"
     tools:context=".MainActivity">
 
 
@@ -51,8 +51,8 @@
 
     <TextView
         android:id="@+id/mainTxt"
-        android:layout_width="318dp"
-        android:layout_height="190dp"
+        android:layout_width="352dp"
+        android:layout_height="148dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -63,8 +63,9 @@
         android:gravity="center"
         android:includeFontPadding="true"
         android:text="@string/mainTxt"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textColor="#042704"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:fontFamily="@font/autour_one"
         app:layout_constraintBottom_toTopOf="@+id/registerbtn"
         app:layout_constraintEnd_toEndOf="parent"

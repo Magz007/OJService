@@ -24,6 +24,7 @@
         android:textColorLink="#00FFFFFF"
         android:textSize="12sp"
         app:fontFamily="@font/autour_one"
+        android:onClick="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
@@ -152,8 +153,8 @@
 
     <TextView
         android:id="@+id/registext"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_width="348dp"
+        android:layout_height="91dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
@@ -163,7 +164,8 @@
         android:gravity="center"
         android:text="@string/registext"
         android:textColor="#FCFFFFFF"
-        android:textSize="12sp"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         app:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toTopOf="@+id/fnametxt"
         app:layout_constraintEnd_toEndOf="parent"

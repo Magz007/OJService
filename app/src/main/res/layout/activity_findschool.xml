@@ -22,14 +22,14 @@
         android:text="@string/schfindAddressbtn"
         android:textSize="12sp"
 
-        app:layout_constraintBottom_toTopOf="@+id/nextYouraddbtn"
+        app:layout_constraintBottom_toTopOf="@+id/submitSchbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/schoolpostcodetxt" />
 
     <Button
-        android:id="@+id/nextYouraddbtn"
+        android:id="@+id/submitSchbtn"
         android:layout_width="140dp"
         android:layout_height="40dp"
         android:layout_marginStart="136dp"
@@ -39,7 +39,7 @@
         android:layout_marginRight="135dp"
         android:layout_marginBottom="91dp"
         android:background="@drawable/roundedgeedittext"
-        android:text="@string/nextYouraddbtn"
+        android:text="@string/SubmitSchbtn"
         android:textSize="12sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
