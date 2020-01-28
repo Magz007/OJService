@@ -2,7 +2,7 @@
     <string name="app_name">School Run Car Sharing</string>
     <string name="mainheadtxt">School Run Car Sharing</string>
 
-    <string name="loginbtn">Login</string>
+    <string name="mainloginbtn">Login</string>
     <string name="mainTxt">Helping cut down Carbon Emissions, Car Share during School run. We can Save our Planet.</string>
     <string name="registerbtn">Sign up</string>
     <string name="detailstxtv">Please Enter your details below</string>
@@ -14,6 +14,11 @@
     <string name="emailregisttxt">Email</string>
     <string name="passregsitxt">Password</string>
     <string name="nextbtn">Next</string>
+
+
+    <string name="editText_Username">Username</string>
+    <string name="editText_Password">Password</string>
+
 
     <string name="myAddressview">Your Address</string>
     <string name="houseNumtxt">Property Number</string>
@@ -34,21 +39,17 @@
     <string name="myrewardsbtn">View my Points</string>
     <string name="signoutbtn">LOG OUT</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_loggedin">Loggedin</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="title_activity_login">Sign in</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="title_activity_userloggedin">Userloggedin</string>
+    <string name="my_address">My Address</string>
+    <string name="my_school">My School</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="my_account">My Account</string>
+    <string name="profile">Profile</string>
+    <string name="textview">Enter Your Login in details below</string>
+    <string name="home">HOME</string>
+    <string name="mail">MAIL</string>
+    <string name="map">MAP</string>
+    <string name="homefragment">This is the Home page</string>
+
+
 
 </resources>

@@ -27,9 +27,6 @@ public class findschool extends AppCompatActivity
             public void onClick(View v)
             {
                 fAuth = FirebaseAuth.getInstance();
-
-
-
             }
         });
     }

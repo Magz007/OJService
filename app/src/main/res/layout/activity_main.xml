@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainbackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/leaf"
+    android:background="#2E3D85"
     tools:context=".MainActivity">
 
 
@@ -19,7 +20,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="64dp"
-        android:background="@drawable/roundedgeedittext"
         android:text="@string/registerbtn"
         android:textSize="12sp"
         app:fontFamily="@font/autour_one"
@@ -75,17 +75,15 @@
         tools:text="@string/mainTxt" />
 
     <Button
-        android:id="@+id/loginbtn"
+        android:id="@+id/mainLogin"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_marginStart="363dp"
-        android:layout_marginLeft="363dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/roundedgeedittext"
-        android:text="@string/loginbtn"
+        android:gravity="center"
+        android:text="@string/mainloginbtn"
         android:textSize="12sp"
         app:fontFamily="@font/autour_one"
         app:layout_constraintBottom_toTopOf="@+id/mainheadtxt"

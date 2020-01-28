@@ -2,7 +2,6 @@ package com.example.ojservice;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.DocumentsContract;
@@ -15,6 +14,7 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -39,6 +39,9 @@ public class signup extends AppCompatActivity {
 
     private Button mButton;
 
+    FirebaseAuth fAuth;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,56 +52,45 @@ public class signup extends AppCompatActivity {
         mEditTextPhone = findViewById(R.id.phonrtxt);
         mEditTextEmail = findViewById(R.id.emailregisttxt);
         mEditTextPassword = findViewById(R.id.passregsitxt);
-
-
-        mButton = findViewById(R.id.nextbtn);
-        mButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openYourAddress();
-            }
-        });
     }
 
-    public void openYourAddress() {
-        Intent intent = new Intent(this, YourAddress.class);
-        startActivity(intent);
-    }
 
-    public void save(View v) {
-        String Fname = mEditTextFname.getText().toString();
+    public void save(View v)
+    {
+        String fname = mEditTextFname.getText().toString();
         String Sname = mEditTextSname.getText().toString();
         String Phone = mEditTextPhone.getText().toString();
         String Eamil = mEditTextEmail.getText().toString();
         String Password = mEditTextPassword.getText().toString();
 
         Map<String, Object> note = new HashMap<>();
-        note.put(KEY_FNAME, mEditTextFname);
-        note.put(KEY_SNAME, mEditTextSname);
-        note.put(KEY_PHONE, mEditTextPhone);
-        note.put(KEY_EMAIL, mEditTextEmail);
-        note.put(KEY_PASSWORD, mEditTextPassword);
+        note.put(KEY_FNAME, fname);
+        note.put(KEY_SNAME, Sname);
+        note.put(KEY_PHONE, Phone);
+        note.put(KEY_EMAIL, Eamil);
+        note.put(KEY_PASSWORD, Password);
 
-        db.collection("Users").document("New Users").set(note)
-                .addOnSuccessListener(new OnSuccessListener<Void>()
-                {
+        db.collection("User").document("New Users").set(note)
+
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid)
                     {
-                        Toast.makeText(signup.this,"Details Saved",Toast.LENGTH_LONG).show();
+                        Toast.makeText(signup.this, "Details Saved", Toast.LENGTH_LONG).show();
+
                     }
                 })
-                .addOnFailureListener(new OnFailureListener()
-                {
+                .addOnFailureListener(new OnFailureListener() {
                     @Override
-                    public void onFailure(@NonNull Exception e)
-                    {
-                        Toast.makeText(signup.this,"Error! Details Not saved",Toast.LENGTH_LONG).show();
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(signup.this, "Error! Details Not saved", Toast.LENGTH_LONG).show();
+
                         Log.d(TAG, e.toString());
                     }
                 });
 
+
     }
 
-}
 
+}
